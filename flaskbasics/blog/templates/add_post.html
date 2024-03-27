@@ -1,0 +1,29 @@
+{% extends 'homepage.html' %}
+
+{% block content %}
+<style>
+    form {
+        width: 50%; 
+        margin: auto; 
+    }
+    input [type='text']{
+        width: 80;
+    }
+</style>
+
+<form method="POST">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title" name="title">
+    </div>
+    <div class="mb-3">
+      <label for="content" class="form-label">Content</label>
+      <input type="text" class="form-control" id="content" name="content">
+    </div>
+    <div class="mb-3">
+        <label for="slug" class="form-label">Slug</label>
+        <input type="text" class="form-control" id="slug" name="slug">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
